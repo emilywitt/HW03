@@ -7,6 +7,13 @@
 # Exercise 1
 # When you submit only include your final function: compare
 
+def compare(x,y):
+    if x > y:
+        return (1)
+    if x == y:
+        return (0)
+    if x < y:
+        return (-1)
 
 
 
@@ -16,7 +23,12 @@
 # When you submit only include your final function: hypotenuse
 # Do develop incrementally. Do not share here.
 
+# a**2 + b**2 = c**2
 
+import sqrt from math
+
+def hypotenuse(a,b):
+    c**2 = a**2 + b**2  
 
 
 
@@ -49,7 +61,7 @@ def main():
     """Your functions will be called within this function."""
     ############################################################################
     # Use this space temporarily to call functions in development:
-    print("Hello World!")
+    #print("Hello World!")
 
 
 
@@ -60,9 +72,9 @@ def main():
     ############################################################################
     # Uncomment the below to test and before commiting:
     # # Exercise 1
-    # compare(1,1)
-    # compare(1,2)
-    # compare(2,1)
+    #compare(1,1)
+    #compare(1,2)
+    #compare(2,1)
     # # Exercise 2
     # hypotenuse(1,1)
     # hypotenuse(3,4)
