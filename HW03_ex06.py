@@ -25,17 +25,21 @@ def compare(x,y):
 
 # a**2 + b**2 = c**2
 
-import sqrt from math
+import math
 
 def hypotenuse(a,b):
-    c**2 = a**2 + b**2  
+    csquared = a**2 + b**2
+    c = math.sqrt(csquared)
+    return c
+    
 
 
 
 ################################################################################
 # Exercise 3
 # When you submit only include your final function: is_between
-
+def is_between(x,y,z):
+    return x <= y <= z
 
 
 
@@ -44,13 +48,20 @@ def hypotenuse(a,b):
 # Exercise 6
 # When you submit only include your final function: is_palindrome
 
-
-
-
+def is_palindrome(s):
+    return s == s[::-1]
 
 ################################################################################
 # Exercise 7
 # When you submit only include your final function: is_power
+def is_power(a,b):
+    if (a % b != 0): 
+        return False
+    elif (a/b==1): 
+        return True
+    else:
+        return is_power(a/b,b)
+
 
 
 
@@ -72,15 +83,15 @@ def main():
     ############################################################################
     # Uncomment the below to test and before commiting:
     # # Exercise 1
-<<<<<<< HEAD
+#<<<<<<< HEAD
     #compare(1,1)
     #compare(1,2)
     #compare(2,1)
-=======
+#=======
     # print compare(1,1)
     # print compare(1,2)
     # print compare(2,1)
->>>>>>> upstream/master
+#>>>>>>> upstream/master
     # # Exercise 2
     # print hypotenuse(1,1)
     # print hypotenuse(3,4)
@@ -91,15 +102,15 @@ def main():
     # print is_between(3,1,2)
     # print is_between(1,1,2)
     # # Exercise 6
-    # print is_palindrome("Python")
-    # print is_palindrome("evitative")
-    # print is_palindrome("sememes")
-    # print is_palindrome("oooooooooooo")
+    #print is_palindrome("Python")
+    #print is_palindrome("evitative")
+    #print is_palindrome("sememes")
+    #print is_palindrome("oooooooooooo")
     # # Exercise 7
-    # print is_power(28,3)
-    # print is_power(27,3)
-    # print is_power(248832,12)
-    # print is_power(248844,12)
+    print is_power(28,3)
+    print is_power(27,3)
+    print is_power(248832,12)
+    print is_power(248844,12)
 
 
 if __name__ == "__main__":
